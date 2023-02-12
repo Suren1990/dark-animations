@@ -1,0 +1,57 @@
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    margin-block-start: 4rem;
+    overflow: hidden;
+
+    &__img {
+        position: absolute;
+        width: 42rem;
+        height: 29.625rem;
+        transition: transform 750ms 350ms;
+    }
+
+    &__img1 {
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    &__img2 {
+        left: 0;
+        bottom: 0;
+        transform: translate(-100%);
+    }
+
+    &__scrolled {
+
+        .section__img {
+            transform: translate(0, 0)
+        }
+    }
+
+    &__inner {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        z-index: 9;
+    }
+
+    &__info {
+        max-width: 40.625rem;
+        width: 80%;
+        min-height: 22.125rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 4rem 5rem;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 0.08em;
+        color: var(--text-main-color);
+        text-transform: uppercase;
+        text-align: center;
+        background-color: var(--info-bg);
+    }
+}

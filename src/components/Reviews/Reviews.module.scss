@@ -1,0 +1,27 @@
+.reviews {
+    padding-block-end: 19.5rem;
+    background: url("../../assets/images/bottom.jpg") center bottom / contain no-repeat;
+
+    &__title {
+        margin-block-end: 2rem;
+        font-family: 'Italiana';
+        font-size: 2.5rem;
+        letter-spacing: 0.08em;
+        color: var(--main-color);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__subtitle {
+        max-width: 30rem;
+        margin-block-end: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 2rem;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+        color: var(--text-main-color);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
